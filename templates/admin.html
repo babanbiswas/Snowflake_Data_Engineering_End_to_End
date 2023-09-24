@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>Add Products</h1>
+    <form method="POST" action="/add_product">
+        <label for="id">Product ID : </label>
+        <input type="text" name="id" required><br><br>
+
+        <label for="name">Product Name</label>
+        <input type="text" name="name"><br><br>
+
+        <label for="price">Product Price : </label>
+        <input type="number" name="price">
+
+        <input type="submit" value="Add Product">
+    </form>
+
+</body>
+</html>

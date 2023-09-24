@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EComm</title>
+</head>
+<body>
+<h1>Welcome to EComm!!!</h1>
+<ul>
+    {% for product in products %}
+        <li>
+            {{ product['name'] }} - ${{ product['price'] }}
+            <a href="/add_to_cart/{{product['id']}}"> Add to Cart </a>
+        </li>
+    {% endfor %}
+    <a href="/cart">Cart</a>
+</ul>
+
+</body>
+</html>

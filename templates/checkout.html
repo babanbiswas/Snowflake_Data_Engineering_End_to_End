@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <ul>
+        {% for product in cart %}
+            <li> {{product['name']}} - ${{product['price']}} </li>
+        {% endfor %}
+    </ul>
+    <p>Total Price : ${{total_price}}</p>
+    <a href="/clear_cart">Clear Cart</a>
+    <a href="/">Home</a>
+</body>
+</html>

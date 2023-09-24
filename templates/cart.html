@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Shopping Cart </title>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <ul>
+        {% for product in cart %}
+            <li> {{product['name']}} - ${{product['price']}} </li>
+        {% endfor %}
+    </ul>
+    <a href="/checkout">Checkout</a>
+    <a href="/clear_cart">Clear Cart</a>
+    <a href="/">Home</a>
+</body>
+</html>
